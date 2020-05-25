@@ -3,9 +3,10 @@ dark: false
 
 # Header
 menu:
-  Home: /
-  Archives: /archives
-  About: /about
+  Главная: /
+  Выпуски: /podcast
+  О подкасте: /about
+  Twitter: https://twitter.com/RusskiAmsterdam
 
 # Your Feed Location
 #rss: /atom.xml
@@ -26,32 +27,28 @@ fb_app_id:
 
 
 # Profile
-nickname: NickName
-description: Lorem ipsum dolor sit amet, **consectetur adipiscing elit.** Fusce eget urna vitae velit *eleifend interdum at ac nisi. In nec ligula lacus. Cum sociis natoque* penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed eu cursus erat, ut dapibus quam. Aliquam eleifend dolor vitae [libero pharetra](http://hexo.io) adipiscing. Etiam adipiscing dolor a quam tempor, eu convallis nulla varius. Aliquam sollicitudin risus a porta aliquam.
+nickname: "Русский Амстердам"
+description: Подкаст, в которым мы разговариваем о самом разном с интересными людьми, которые живут в Нидерландах, и говорят на русском. Все чаще и чаще слыша русскую речь на улицах, мы поняли, что так мало знаем о тех, кто живут вокруг, и говорят с нами на одном языке. Поэтому мы решили с ними болтать о том, что им интересно. И, возможно, будет интересно вам. Подписывайтесь на всех платформах, или читайте и слушайте [здесь](/podcast). 
 
 # Load fontawesome icons? Also see the links option
-icons: false
+icons: true
 
 # Footer area links
 # NOTICE) If you set "icons: false" link names will be clear text
 # If "icons: true" link names will interpreted as fontawesome icon names
 # NOTICE) Use the fontawesome icon names without the fa- prefix (http://fontawesome.io/cheatsheet/)
 links:
-  book: /archives/
-  globe: https://github.com/geekplux/hexo-theme-typing
-  twitter: https://twitter.com/
-  github-alt: https://github.com/
-  youtube-play: https://www.youtube.com/
-  stack-overflow: https://stackoverflow.com/
-  google-plus: https://plus.google.com/
+  # Выпуски: /podcast
+  # О подкасте: /about
+  twitter: https://twitter.com/RusskiAmsterdam  
   rss: /atom.xml
 
 # nav position (top, left. top is default)
-nav: left
+nav: top
 
 # Info
-archive_footer_content: Lorem ipsum dolor sit amet, **consectetur adipiscing elit.** Fusce eget urna vitae velit *eleifend interdum at ac nisi. In nec ligula lacus. Cum sociis natoque* penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed eu cursus erat, ut dapibus quam. Archive
-post_footer_content: ipsum dolor sit amet, **consectetur adipiscing elit.** Fusce eget urna vitae velit *eleifend interdum at ac nisi. In nec ligula lacus. Cum sociis natoque* penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed eu cursus erat, ut dapibus quam. Post
+archive_footer_content: Если вам понравилось, или не понравилось. Если у вас есть идеи, или вы хотите стать гостем "Русского Амстердама", да просто, если хотите с нами поболтать – пишите в [Twitter](https://twitter.com/RusskiAmsterdam).
+post_footer_content: Если вам понравилось, или не понравилось. Если у вас есть идеи, или вы хотите стать гостем "Русского Амстердама", да просто, если хотите с нами поболтать – пишите в [Twitter](https://twitter.com/RusskiAmsterdam).
 
 # Gitment
 gitment:

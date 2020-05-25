@@ -1,6 +1,6 @@
-@import 'typo.css';
+/*@import 'typo.css';*/
 @import 'normalize.css';
-
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
 
 $black-normal: #505050;
 $black-bold: #111;
@@ -8,7 +8,7 @@ $black-light: #222;
 $grey: #aeb4b9;
 $grey-bold: #777;
 $grey-light: #cacdd0;
-$scooter: #22c5e5;
+$scooter: rgb(255,0,0);
 $content-width: 60%;
 $content-max-width: 700px;
 $mobile-content-width: 80%;
@@ -21,9 +21,8 @@ $mobile-content-width: 80%;
 }
 
 %hr-base {
-  height: 1px;
-  border: 0;
-  background-image: -webkit-linear-gradient(0deg, transparent, #d5d5d5, transparent);
+  height: 0;
+  border: 1px solid $grey;
 }
 
 %nav-link-base {
@@ -53,19 +52,19 @@ body, h1, h2, h3, h4, h5, h6 {
 }
 
 body {
-  font-family: Baskerville, "Times New Roman", "Liberation Serif", STFangsong, FangSong, FangSong_GB2312, "CWTEX\-F", serif;
-  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 200%;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: Baskerville, Georgia, "Liberation Serif", "Kaiti SC", STKaiti, "AR PL UKai CN", "AR PL UKai HK", "AR PL UKai TW", "AR PL UKai TW MBE", "AR PL KaitiM GB", KaiTi, KaiTi_GB2312, DFKai-SB, "TW\-Kai", serif;
+  font-family: "EB Garamond", serif;
 }
 
 a {
-  color: $black-light;
-  /* font-weight: 200; */
-  text-decoration: none;
-  transition: color 250ms linear;
+  color: $scooter;
+  text-decoration: underline;
+  transition: all 500ms linear;
   cursor: pointer;
 }
 a:hover {
@@ -124,12 +123,8 @@ blockquote {
   li {
     display: inline-block;
   }
-
-  a {
-    color: $grey-bold;
-  }
   a:hover {
-    color: $scooter;
+    color: $grey-bold;
   }
 }
 
@@ -144,10 +139,6 @@ blockquote {
 }
 
 .footer-links {
-  a {
-    text-decoration: none;
-  }
-  font-size: 100%;
   padding: 0;
   li {
     margin: 0 5px;
@@ -161,8 +152,6 @@ blockquote {
 }
 
 .home {
-  font-weight: lighter;
-  line-height: 1.4;
   color: $black-normal;
   text-align: center;
   position: relative;
@@ -185,8 +174,6 @@ blockquote {
 
   hr {
     @extend %hr-base;
-    width: 80%;
-    max-width: 300px;
     margin: 20px auto;
   }
 
@@ -196,9 +183,11 @@ blockquote {
 
   .profile {
     width: 100%;
+    text-align: left;
 
     h1 {
-      font-weight: 300;
+      font-weight: 900;
+      font-size:2.5em;
     }
   }
 
@@ -241,14 +230,12 @@ blockquote {
   }
 
   a {
-    border: 0;
-  }
-  a:hover {
+    color:$grey-bold;
     border: 0;
   }
 
   .header {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .archive-article-header {
@@ -279,9 +266,7 @@ blockquote {
     font-size: 80%;
     color: $grey-light;
   }
-  .archive-article-title {
-    font-weight: 200;
-  }
+
 
   .archive-year-wrap {
     margin-bottom: 20px;
@@ -311,7 +296,6 @@ blockquote {
   /* font-size: 16px; */
 
   .header {
-    font-size: 18px;
     padding-top: 50px;
   }
 
@@ -471,6 +455,8 @@ blockquote {
   .article-meta {
     font-size: 80%;
     color: $grey;
+    list-style-type: none;
+    padding:0;
     a {
       color: $grey-bold;
     }
